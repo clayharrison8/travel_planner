@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CountryFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-16dp">
+
+        <ImageView
+            android:id="@+id/images"
+            android:layout_width="match_parent"
+            android:layout_height="251dp"
+            android:scaleType="fitXY"
+            android:tint="#6F000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="TextView"
+            android:textColor="#FAFFFFFF"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="@+id/images"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.173"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/country_button"
+            style="@style/CountryDetailButtonTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="112dp"
+            android:drawableStart="@drawable/location"
+            android:drawableLeft="@drawable/location"
+            android:drawableTint="@color/black"
+            android:text="Cities"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/images" />
+
+        <Button
+            android:id="@+id/regions"
+            style="@style/CountryDetailButtonTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="112dp"
+            android:text="Regions"
+            android:drawableLeft="@drawable/location"
+            android:drawableTint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.32"
+            app:layout_constraintStart_toEndOf="@+id/top_attractions"
+            app:layout_constraintTop_toBottomOf="@+id/images" />
+
+        <Button
+            android:id="@+id/top_attractions"
+            style="@style/CountryDetailButtonTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="112dp"
+            android:drawableLeft="@drawable/location"
+            android:drawableTint="@color/black"
+            android:text="Attractions"
+            app:layout_constraintStart_toEndOf="@+id/country_button"
+            app:layout_constraintTop_toBottomOf="@+id/images" />
+
+        <TextView
+            android:id="@+id/country_snippet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="5dp"
+            android:text="Hello"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/images" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="4dp"
+            app:layout_constraintTop_toBottomOf="@+id/top_attractions"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <ImageView
+            android:id="@+id/add_or_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="204dp"
+            android:src="@drawable/arrow_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.863"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

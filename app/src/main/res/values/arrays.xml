@@ -1,0 +1,38 @@
+<resources>
+    <!-- Reply Preference -->
+    <string-array name="reply_entries">
+        <item>Reply</item>
+        <item>Reply to all</item>
+    </string-array>
+
+    <string-array name="reply_values">
+        <item>reply</item>
+        <item>reply_all</item>
+    </string-array>
+
+    <string-array name="score_labels">
+        <item>@string/one_and_greater_label</item>
+        <item>@string/two_and_greater_label</item>
+        <item>@string/three_and_greater_label</item>
+        <item>@string/four_and_greater_label</item>
+        <item>@string/five_and_greater_label</item>
+        <item>@string/six_and_greater_label</item>
+        <item>@string/seven_and_greater_label</item>
+        <item>@string/eight_and_greater_label</item>
+        <item>@string/nine_and_greater_label</item>
+        <item>@string/ten_and_greater_label</item>
+    </string-array>
+
+    <string-array name="score_values">
+        <item>@string/one_and_greater_value</item>
+        <item>@string/two_and_greater_value</item>
+        <item>@string/three_and_greater_value</item>
+        <item>@string/four_and_greater_value</item>
+        <item>@string/five_and_greater_value</item>
+        <item>@string/six_and_greater_value</item>
+        <item>@string/seven_and_greater_value</item>
+        <item>@string/eight_and_greater_value</item>
+        <item>@string/nine_and_greater_value</item>
+        <item>@string/ten_and_greater_value</item>
+    </string-array>
+</resources>

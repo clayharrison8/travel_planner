@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "116789858251",
+    "firebase_url": "https://careful-sphinx-260517.firebaseio.com",
+    "project_id": "careful-sphinx-260517",
+    "storage_bucket": "careful-sphinx-260517.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:116789858251:android:1ddbafca4e45ad3d07b04e",
+        "android_client_info": {
+          "package_name": "com.example.planner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "116789858251-pkjqt0trm58esh8rfr20ag0kftocg0re.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhpRN3dIqk2p76wJfnYm9PVu3t48y88w8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "116789858251-pkjqt0trm58esh8rfr20ag0kftocg0re.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

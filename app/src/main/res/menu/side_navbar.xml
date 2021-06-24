@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/nav_header">
+    <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/home_image"
+        />
+
+        <item
+            android:id="@+id/planner"
+            android:title="Planner"
+            android:icon="@drawable/planner_image"
+            />
+
+        <item
+            android:id="@+id/catalogue"
+            android:title="Catalogue"
+            android:icon="@drawable/planner_image"
+            />
+
+    <item
+        android:id="@+id/mytrips"
+        android:title="My Trips"
+        android:icon="@drawable/my_trips_image"
+        />
+    <item
+        android:id="@+id/favourites"
+        android:title="Favourites"
+        android:icon="@drawable/wishlist_image"
+        />
+
+<!--        <item-->
+<!--            android:id="@+id/utilities"-->
+<!--            android:title="Utilities"-->
+<!--            android:icon="@drawable/utilities_image"-->
+<!--            />-->
+        <item
+            android:id="@+id/converter"
+            android:title="Currency Converter"
+            android:icon="@drawable/utilities_image"
+            />
+
+    </group>
+
+    <group android:id="@+id/setting_seperator">
+    <item
+        android:id="@+id/settings"
+        android:title="Settings"
+        android:icon="@drawable/settings_image"
+        />
+    <item
+        android:id="@+id/sign_out"
+        android:title="Sign Out"
+        android:icon="@drawable/profile_image"
+        />
+    </group>
+
+
+
+
+</menu>

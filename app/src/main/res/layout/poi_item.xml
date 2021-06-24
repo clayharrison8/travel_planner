@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="city"
+            type="com.example.planner.model.POI"/>
+        <variable
+            name="countryImageMedium"
+            type="com.example.planner.model.CountryImageMediumSize" />
+        <variable
+            name="itemClickListener"
+            type="com.example.planner.CustomClickListener" />
+        <variable
+            name="reusable"
+            type="com.example.planner.Reusable" />
+        <variable
+        name="adapterPosition"
+        type="Integer" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{() -> itemClickListener.cardClicked(city)}">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/imageView">
+
+        <ImageView
+            android:id="@+id/ivPic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constrainedHeight="true"
+            android:scaleType="fitXY"
+            android:srcc="@{countryImageMedium.url}"
+            bind:layout_constraintEnd_toEndOf="parent"
+            bind:layout_constraintHorizontal_bias="0.0"
+            bind:layout_constraintStart_toStartOf="parent"
+            bind:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        bind:layout_constraintEnd_toEndOf="parent"
+        bind:layout_constraintHorizontal_bias="0.019"
+        bind:layout_constraintStart_toStartOf="parent"
+        bind:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/white"
+        android:text="@{`Score: ` + Double.toString(city.score)}"
+        />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@{city.bookingInfo.price.amount == null ? null : '€' + city.bookingInfo.price.amount}"
+        android:textColor="@color/white"
+        bind:layout_constraintBottom_toBottomOf="parent"
+        bind:layout_constraintEnd_toEndOf="parent"
+        bind:layout_constraintHorizontal_bias="0.97"
+        bind:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/cityName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="16dp"
+        android:text="@{city.name}"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        bind:layout_constraintEnd_toEndOf="parent"
+        bind:layout_constraintHorizontal_bias="0.017"
+        bind:layout_constraintStart_toStartOf="parent"
+        bind:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/dotsPopUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:onClick="@{() -> itemClickListener.PopUpClicked(city, adapterPosition)}"
+        android:src="@drawable/dots"
+        android:tint="@color/black"
+        bind:layout_constraintEnd_toEndOf="parent"
+        bind:layout_constraintHorizontal_bias="1.0"
+        bind:layout_constraintStart_toEndOf="@+id/cityName"
+        bind:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/citySnippet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:padding="4dp"
+        android:text="@{city.snippet}"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        bind:layout_constraintEnd_toEndOf="parent"
+        bind:layout_constraintHorizontal_bias="0.0"
+        bind:layout_constraintStart_toStartOf="parent"
+        bind:layout_constraintTop_toBottomOf="@+id/imageView" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

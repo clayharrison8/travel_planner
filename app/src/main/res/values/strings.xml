@@ -1,0 +1,140 @@
+<resources>
+    <string name="app_name">MapDemoGoogle</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_register">Register</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="title_activity_planner">Planner</string>
+    <string name="title_activity_my_trips">MyTrips</string>
+    <string name="title_activity_wishlist">Wishlist</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="side_navbar_open">Open Navbar</string>
+    <string name="side_navbar_close">Close Navbar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="Utilities">
+        <item>Currency Converter</item>
+    </string-array>
+
+    <string-array name="currency_options">
+        <item>USD</item>
+        <item>INR </item>
+        <item>AUD</item>
+        <item>CAD</item>
+        <item>EUR</item>
+        <item>GBP</item>
+    </string-array>
+
+    <string name="compass_dial" translatable="false">Compass Dial</string>
+    <string name="compass_hands" translatable="false">Compass Hands</string>
+
+    <string name="sotw_north">N</string>
+    <string name="sotw_east">E</string>
+    <string name="sotw_south">S</string>
+    <string name="sotw_west">W</string>
+    <string name="sotw_northeast">NE</string>
+    <string name="sotw_northwest">NW</string>
+    <string name="sotw_southeast">SE</string>
+    <string name="sotw_southwest">SW</string>
+
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+    <string-array name="interest_items">
+        <item>Art</item>
+        <item>Golf </item>
+        <item>Camping </item>
+        <item>Gambling </item>
+        <item> Diving</item>
+        <item>Hiking </item>
+        <item>Watersports</item>
+        <item>Swimming</item>
+        <item> Sailing</item>
+        <item> Sightseeing</item>
+        <item>Sports </item>
+        <item> Cinema</item>
+        <item>Museums</item>
+        <item> Dancing</item>
+        <item> Shopping</item>
+        <item> Wellness</item>
+        <item> Kayaking</item>
+        <item> Climbing</item>
+    </string-array>
+
+
+    <string name="one_and_greater_label" translatable="false">Greater than or equal to 1</string>
+    <string name="one_and_greater_value" translatable="false">>=1</string>
+
+    <string name="two_and_greater_label" translatable="false">Greater than or equal to 2</string>
+    <string name="two_and_greater_value" translatable="false">>=2</string>
+
+    <string name="three_and_greater_label" translatable="false">Greater than or equal to 3</string>
+    <string name="three_and_greater_value" translatable="false">>=3</string>
+
+    <string name="four_and_greater_label" translatable="false">Greater than or equal to 4</string>
+    <string name="four_and_greater_value" translatable="false">>=4</string>
+
+    <string name="five_and_greater_label" translatable="false">Greater than or equal to 5</string>
+    <string name="five_and_greater_value" translatable="false">>=5</string>
+
+    <string name="six_and_greater_label" translatable="false">Greater than or equal to 6</string>
+    <string name="six_and_greater_value" translatable="false">>=6</string>
+
+    <string name="seven_and_greater_label" translatable="false">Greater than or equal to 7(default)</string>
+    <string name="seven_and_greater_value" translatable="false">>=7</string>
+
+    <string name="eight_and_greater_label" translatable="false">Greater than or equal to 8</string>
+    <string name="eight_and_greater_value" translatable="false">>=8</string>
+
+    <string name="nine_and_greater_label" translatable="false">Greater than or equal to 9</string>
+    <string name="nine_and_greater_value" translatable="false">>=9</string>
+
+    <string name="ten_and_greater_label" translatable="false">Greater than or equal to 10</string>
+    <string name="ten_and_greater_value" translatable="false">>=10</string>
+
+
+    <string name="sightseeing_score_title">Sightseeing score</string>
+    <string name="eat_and_drink_score_title">Eat &amp; drink score</string>
+    <string name="nightlife_score_title">Nightlife score</string>
+    <string name="hotel_score_title">Hotel score</string>
+    <string name="score_summary">Show venues which are greater than and equal to the selected option.</string>
+
+    <string name="sightseeing_key" translatable="false">Sightseeing Score</string>
+    <string name="eat_drink_key" translatable="false">Eat and Drink Score</string>
+    <string name="nightlife_key" translatable="false">Nightlife Score</string>
+    <string name="hotel_key" translatable="false">Hotel Score</string>
+    <string name="bookable_key" translatable="false">Bookable</string>
+
+
+    <string name="bookable_title">Bookable venues</string>
+    <string name="bookable_summary">Show only bookable venues(Price info is subject to providers.)</string>
+
+    <string name="bookable_enabled_value">1</string>
+    <string name="bookable_disabled_value">0</string>
+
+    <!-- Outside Values/Labels -->
+    <string name="outside_header">Outside Content Preferences</string>
+    <string name="outside_summary">Changes will be reflected right away after any selection.</string>
+    <string name="activity_key">activity_key</string>
+    <string name="country_key">country_key</string>
+    <string name="tag_key">tag_key</string>
+    <string name="score_key">score_key</string>
+
+
+    <string name="asterisk">UserName <font color='red'>*</font></string>
+</resources>
